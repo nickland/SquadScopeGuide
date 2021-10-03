@@ -19,6 +19,7 @@
             <option value="US">🇺🇸 - United States Army</option>
             <option value="RU">🇷🇺 - Russian Ground Forces</option>
             <option value="MILITIA">🚩 - Irregular Militia Forces</option>
+            <option value="MEA">🚩 - Middle Eastern Alliance</option>
           </select>
         </div>
       </div>
@@ -33,9 +34,10 @@
             <option value="">Select your kit</option>
             <option *ngIf="teamForm.controls.team.value === 'US'" value="M3_MAAWS_HEAT">M3 MAAWS HEAT (High Explosive Anti-Tank)</option>
             <option *ngIf="teamForm.controls.team.value === 'US'" value="M3_MAAWS_TANDEM">M3 MAAWS Tandem (Tandem Heavy Anti-Tank)</option>
-            <option *ngIf="teamForm.controls.team.value === 'RU'" value="RPG-7V2">RPG-7V2 (HE + Tandem)</option>
+            <option *ngIf="teamForm.controls.team.value === 'RU' || teamForm.controls.team.value === 'MEA'" value="RPG-7V2">RPG-7V2 (HE + Tandem)</option>
             <option *ngIf="teamForm.controls.team.value === 'RU'" value="RPG_28_TANDEM">RPG-28 (Tandem)</option>
             <option *ngIf="teamForm.controls.team.value === 'MILITIA'" value="RPG_29_TANDEM">RPG-29 (Tandem)</option>
+            <option *ngIf="teamForm.controls.team.value === 'MEA'" value="RPG_29_TANDEM_MEA">RPG-29 (Tandem)</option>
           </select>
         </div>
       </div>
@@ -62,10 +64,8 @@
         </div>
       </div>
       <div class="block">
-        <div class="notification">
-          <button class="delete"></button>
-          Report a problem on Discord 4ngel#0711
-        </div>
+        <a href="https://github.com/nickland/SquadScopeGuide/issues/" target="_blank">Click me to report a problem</a>
+        <a href="https://github.com/nickland/SquadScopeGuide" target="_blank">Contribute on Github</a>
       </div>
     </div>
     <div class="column is-three-quarters">

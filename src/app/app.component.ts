@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder } from "@angular/forms";
-import {WeaponsService} from "./weapons.service";
+import { WeaponsService } from "./shared/weapons-service/weapons.service";
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,7 @@ import {WeaponsService} from "./weapons.service";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'SquadScopeGuide';
+  title = 'Squad Game Scope Guide for Anti Tank';
   teamForm = this.fb.group({
     team: ['']
   })
@@ -74,7 +74,7 @@ export class AppComponent {
   }
 
   /**
-   * Will update the image source. Needs to know if the weapon has ranging or not.
+   * Will update the image source.
    */
   updateImageSource(): void {
     let weapon = this.weaponForm.controls.weapon.value;

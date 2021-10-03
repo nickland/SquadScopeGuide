@@ -109,6 +109,18 @@ export const fixtures: Fixtures = {
           filename: "RPG_29_TANDEM.webp",
         }
       ]
+    },
+    {
+      team: "MEA",
+      weapon: "RPG_29_TANDEM_MEA",
+      has_ranging: false,
+      ranging_options: [],
+      filenames: [
+        {
+          range: null,
+          filename: "RPG_29_MEA_TANDEM.jpg",
+        }
+      ]
     }
   ]
 };

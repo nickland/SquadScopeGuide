@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { fixtures } from "../assets/fixtures";
+import { fixtures } from "../../../assets/fixtures";
 
 @Injectable({
   providedIn: 'root'
